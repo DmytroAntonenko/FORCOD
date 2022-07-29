@@ -1,0 +1,21 @@
+.footer {
+    background-color: $additionalBackgroundColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-container {
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            }
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            text-align: left;
+            }
+    }
+}
+.footer__adress-tumb {
+    margin-bottom: 60px;
+}

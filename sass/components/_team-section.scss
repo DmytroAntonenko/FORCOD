@@ -1,0 +1,105 @@
+.team-section {
+    background-color: $teamBackgroundColor;
+}
+
+.team {
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        background: $primeryBodyColor;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        padding-top: 0;
+    }
+        
+        // @media screen and (min-width: 480px) {
+        //     flex-basis: 450px;
+        //     }
+        
+
+        // @media screen and (min-width: 768px) {
+        //         flex-basis: 354px;
+        //         } 
+
+        // @media screen and (min-width: 1200px) {
+        //     flex-basis: 270px;   
+        //     }
+
+    // &__item:not(:last-child) {
+    //     @media screen and (min-width: 480px) {
+    //         margin-bottom: $cardSetGap;
+    //         }
+       
+    //     @media screen and (min-width: 1200px) {
+    //         margin-bottom: 0;
+    //         margin-right: $cardSetGap;
+    //         }  
+    // }
+
+    // &__item:nth-child(odd) {
+    //     @media screen and (min-width: 768px) {
+    //         margin-right: $cardSetGap;
+    //     }
+    // }
+    // &__item:nth-last-child(-n + 2) {
+    //     @media screen and (min-width: 768px) {
+    //         margin-bottom: 0;
+    //     }
+    //   }
+    &__photo {
+        height: 460px;    
+
+        @media screen and (min-width: 768px) {
+            height: 374px;
+            width: 354px;
+            }
+
+        @media screen and (min-width: 1200px) {
+            height: 260px;
+            width: 270px; 
+            }
+    }
+
+    &__img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    
+        object-fit: cover;
+    }
+
+    &__name {
+        margin-top: $cardSetGap;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $titleTextColor;
+    }
+
+    &__positoin {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+    }
+
+    &__socials{
+        margin-top: 16px;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 30px;
+    }
+
+}

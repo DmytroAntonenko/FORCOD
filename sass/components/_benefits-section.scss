@@ -1,0 +1,63 @@
+.benefits {
+    
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+    
+    &__item {
+        padding: 15px;
+        @media screen and (min-width: 480px) {
+            flex-basis: 100%;
+            }
+        
+
+        @media screen and (min-width: 768px) {
+                flex-basis: 50%;
+
+                } 
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: 25%;   
+            }
+
+    }
+    &__tumb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $cardSetGap;
+        border: none;
+        border-radius: 4px;
+        background: $teamBackgroundColor;
+    }
+
+    &__icon {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        color: $titleTextColor;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            } 
+        }
+
+    &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}
