@@ -1,18 +1,7 @@
 .current {
-    color: $accentColor;
-
-
-&:after {
-    content: "";
-    display: block;
-    height: 4px;
-    margin-top: 28px;
-    background-image: url(../images/hover.png);
-    background-size: cover;
-    border-radius: 2px; 
-}
+    color: #D41443;
 }
 
 .mobile-menu__current {
-    color: $accentColor;  
+    color: #D41443;  
 }
